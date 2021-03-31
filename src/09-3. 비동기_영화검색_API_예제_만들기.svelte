@@ -13,13 +13,12 @@
 
 	async function searchMovies() {
 		if (loading) {
-			// 출력 결과가 있다면 초기화
-			movies = true;
-			error = null;
-			loading = true;
 			return;
 		}
 
+		// 출력 결과가 있다면 초기화
+		movies = true;
+		error = null;
 		loading = true;
 
 		try {
